@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>prettier 基本配置 | x-ui</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/web-doc/assets/img/logo.png">
+    <meta name="description" content="关于x-ui如何使用">
+    
+    <link rel="preload" href="/web-doc/assets/css/0.styles.8eb95ddb.css" as="style"><link rel="preload" href="/web-doc/assets/js/app.d25b3d65.js" as="script"><link rel="preload" href="/web-doc/assets/js/2.6a76ebee.js" as="script"><link rel="preload" href="/web-doc/assets/js/16.fa345b08.js" as="script"><link rel="prefetch" href="/web-doc/assets/js/10.453c1249.js"><link rel="prefetch" href="/web-doc/assets/js/11.3bfd69ac.js"><link rel="prefetch" href="/web-doc/assets/js/12.93c88327.js"><link rel="prefetch" href="/web-doc/assets/js/13.a95b428b.js"><link rel="prefetch" href="/web-doc/assets/js/14.fce906fb.js"><link rel="prefetch" href="/web-doc/assets/js/15.4dcf31a3.js"><link rel="prefetch" href="/web-doc/assets/js/17.3d3081c1.js"><link rel="prefetch" href="/web-doc/assets/js/3.90a85d91.js"><link rel="prefetch" href="/web-doc/assets/js/4.83759618.js"><link rel="prefetch" href="/web-doc/assets/js/5.314ed95b.js"><link rel="prefetch" href="/web-doc/assets/js/6.a8018b67.js"><link rel="prefetch" href="/web-doc/assets/js/7.b2bb5fe9.js"><link rel="prefetch" href="/web-doc/assets/js/8.41367eb8.js"><link rel="prefetch" href="/web-doc/assets/js/9.af24e7d4.js">
+    <link rel="stylesheet" href="/web-doc/assets/css/0.styles.8eb95ddb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/web-doc/" class="home-link router-link-active"><img src="/web-doc/assets/img/logo.png" alt="x-ui" class="logo"> <span class="site-name can-hide">x-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/web-doc/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/web-doc/knowledge-base/前端常用工具.html" class="nav-link">
+  知识库
+</a></div><div class="nav-item"><a href="/web-doc/web-standar/css规范.html" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/web-doc/components/Button.html" class="nav-link">
+  组件文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="github" class="dropdown-title"><span class="title">github</span> <span class="arrow down"></span></button> <button type="button" aria-label="github" class="mobile-dropdown-title"><span class="title">github</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/bj2020/web-doc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  web-doc
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/web-doc/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/web-doc/knowledge-base/前端常用工具.html" class="nav-link">
+  知识库
+</a></div><div class="nav-item"><a href="/web-doc/web-standar/css规范.html" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/web-doc/components/Button.html" class="nav-link">
+  组件文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="github" class="dropdown-title"><span class="title">github</span> <span class="arrow down"></span></button> <button type="button" aria-label="github" class="mobile-dropdown-title"><span class="title">github</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/bj2020/web-doc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  web-doc
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/web-doc/web-standar/css规范" class="sidebar-heading clickable"><span>前端开发规范</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/web-doc/web-standar/css规范.html" class="sidebar-link">css规范</a></li><li><a href="/web-doc/web-standar/变量命名.html" class="sidebar-link">变量命名</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/web-doc/web-standar/prettier配置" class="sidebar-heading clickable open active"><span>代码格式化以及常见配置文件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/web-doc/web-standar/prettier配置.html" class="active sidebar-link">prettier.js</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/web-doc/web-standar/editorConfig.html" class="sidebar-link">.editorconfig.js</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="prettier-基本配置"><a href="#prettier-基本配置" class="header-anchor">#</a> prettier 基本配置</h3> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">printWidth</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span> <span class="token comment">//单行长度</span>
+  <span class="token literal-property property">tabWidth</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//缩进长度</span>
+  <span class="token literal-property property">useTabs</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//使用空格代替tab缩进</span>
+  <span class="token literal-property property">semi</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//句末使用分号</span>
+  <span class="token literal-property property">singleQuote</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//使用单引号</span>
+  <span class="token literal-property property">quoteProps</span><span class="token operator">:</span> <span class="token string">'as-needed'</span><span class="token punctuation">,</span> <span class="token comment">//仅在必需时为对象的key添加引号</span>
+  <span class="token literal-property property">jsxSingleQuote</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// jsx中使用单引号</span>
+  <span class="token literal-property property">trailingComma</span><span class="token operator">:</span> <span class="token string">'all'</span><span class="token punctuation">,</span> <span class="token comment">//多行时尽可能打印尾随逗号</span>
+  <span class="token literal-property property">bracketSpacing</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//在对象前后添加空格-eg: { foo: bar }</span>
+  <span class="token literal-property property">jsxBracketSameLine</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//多属性html标签的‘&gt;’折行放置</span>
+  <span class="token literal-property property">arrowParens</span><span class="token operator">:</span> <span class="token string">'always'</span><span class="token punctuation">,</span> <span class="token comment">//单参数箭头函数参数周围使用圆括号-eg: (x) =&gt; x</span>
+  <span class="token literal-property property">requirePragma</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//无需顶部注释即可格式化</span>
+  <span class="token literal-property property">insertPragma</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//在已被preitter格式化的文件顶部加上标注</span>
+  <span class="token literal-property property">proseWrap</span><span class="token operator">:</span> <span class="token string">'preserve'</span><span class="token punctuation">,</span> <span class="token comment">//不知道怎么翻译</span>
+  <span class="token literal-property property">htmlWhitespaceSensitivity</span><span class="token operator">:</span> <span class="token string">'ignore'</span><span class="token punctuation">,</span> <span class="token comment">//对HTML全局空白不敏感</span>
+  <span class="token literal-property property">vueIndentScriptAndStyle</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//不对vue中的script及style标签缩进</span>
+  <span class="token literal-property property">endOfLine</span><span class="token operator">:</span> <span class="token string">'lf'</span><span class="token punctuation">,</span> <span class="token comment">//结束行形式</span>
+  <span class="token literal-property property">embeddedLanguageFormatting</span><span class="token operator">:</span> <span class="token string">'auto'</span><span class="token punctuation">,</span> <span class="token comment">//对引用代码进行格式化</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web-doc/web-standar/变量命名.html" class="prev">
+        变量命名
+      </a></span> <span class="next"><a href="/web-doc/web-standar/editorConfig.html">
+        .editorconfig.js
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/web-doc/assets/js/app.d25b3d65.js" defer></script><script src="/web-doc/assets/js/2.6a76ebee.js" defer></script><script src="/web-doc/assets/js/16.fa345b08.js" defer></script>
+  </body>
+</html>

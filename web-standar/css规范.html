@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS / Sass 规范指南 | x-ui</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/web-doc/assets/img/logo.png">
+    <meta name="description" content="关于x-ui如何使用">
+    
+    <link rel="preload" href="/web-doc/assets/css/0.styles.8eb95ddb.css" as="style"><link rel="preload" href="/web-doc/assets/js/app.d25b3d65.js" as="script"><link rel="preload" href="/web-doc/assets/js/2.6a76ebee.js" as="script"><link rel="preload" href="/web-doc/assets/js/15.4dcf31a3.js" as="script"><link rel="prefetch" href="/web-doc/assets/js/10.453c1249.js"><link rel="prefetch" href="/web-doc/assets/js/11.3bfd69ac.js"><link rel="prefetch" href="/web-doc/assets/js/12.93c88327.js"><link rel="prefetch" href="/web-doc/assets/js/13.a95b428b.js"><link rel="prefetch" href="/web-doc/assets/js/14.fce906fb.js"><link rel="prefetch" href="/web-doc/assets/js/16.fa345b08.js"><link rel="prefetch" href="/web-doc/assets/js/17.3d3081c1.js"><link rel="prefetch" href="/web-doc/assets/js/3.90a85d91.js"><link rel="prefetch" href="/web-doc/assets/js/4.83759618.js"><link rel="prefetch" href="/web-doc/assets/js/5.314ed95b.js"><link rel="prefetch" href="/web-doc/assets/js/6.a8018b67.js"><link rel="prefetch" href="/web-doc/assets/js/7.b2bb5fe9.js"><link rel="prefetch" href="/web-doc/assets/js/8.41367eb8.js"><link rel="prefetch" href="/web-doc/assets/js/9.af24e7d4.js">
+    <link rel="stylesheet" href="/web-doc/assets/css/0.styles.8eb95ddb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/web-doc/" class="home-link router-link-active"><img src="/web-doc/assets/img/logo.png" alt="x-ui" class="logo"> <span class="site-name can-hide">x-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/web-doc/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/web-doc/knowledge-base/前端常用工具.html" class="nav-link">
+  知识库
+</a></div><div class="nav-item"><a href="/web-doc/web-standar/css规范.html" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/web-doc/components/Button.html" class="nav-link">
+  组件文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="github" class="dropdown-title"><span class="title">github</span> <span class="arrow down"></span></button> <button type="button" aria-label="github" class="mobile-dropdown-title"><span class="title">github</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/bj2020/web-doc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  web-doc
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/web-doc/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/web-doc/knowledge-base/前端常用工具.html" class="nav-link">
+  知识库
+</a></div><div class="nav-item"><a href="/web-doc/web-standar/css规范.html" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/web-doc/components/Button.html" class="nav-link">
+  组件文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="github" class="dropdown-title"><span class="title">github</span> <span class="arrow down"></span></button> <button type="button" aria-label="github" class="mobile-dropdown-title"><span class="title">github</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/bj2020/web-doc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  web-doc
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/web-doc/web-standar/css规范" class="sidebar-heading clickable open active"><span>前端开发规范</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/web-doc/web-standar/css规范.html" class="active sidebar-link">css规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web-doc/web-standar/css规范.html#目录" class="sidebar-link">目录</a></li><li class="sidebar-sub-header"><a href="/web-doc/web-standar/css规范.html#术语" class="sidebar-link">术语</a></li><li class="sidebar-sub-header"><a href="/web-doc/web-standar/css规范.html#css" class="sidebar-link">CSS</a></li><li class="sidebar-sub-header"><a href="/web-doc/web-standar/css规范.html#sass" class="sidebar-link">Sass</a></li></ul></li><li><a href="/web-doc/web-standar/变量命名.html" class="sidebar-link">变量命名</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/web-doc/web-standar/prettier配置" class="sidebar-heading clickable"><span>代码格式化以及常见配置文件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/web-doc/web-standar/prettier配置.html" class="sidebar-link">prettier.js</a></li><li><a href="/web-doc/web-standar/editorConfig.html" class="sidebar-link">.editorconfig.js</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css-sass-规范指南"><a href="#css-sass-规范指南" class="header-anchor">#</a> CSS / Sass 规范指南</h1> <h2 id="目录"><a href="#目录" class="header-anchor">#</a> 目录</h2> <ol><li><a href="#terminology">术语</a></li></ol> <div class="language- extra-class"><pre><code>- [规则声明](#rule-declaration)
+- [选择器](#selectors)
+- [属性](#properties)
+</code></pre></div><ol><li><a href="#css">CSS</a></li></ol> <div class="language- extra-class"><pre><code>- [文件引用](#file-import)
+- [格式](#formatting)
+- [属性顺序](#order)
+- [注意事项](#careful)
+- [注释](#comments)
+- [OOCSS 和 BEM](#oocss-and-bem)
+- [ID 选择器](#id-selectors)
+- [JavaScript 钩子](#javascript-hooks)
+</code></pre></div><ol><li><a href="#sass">Sass</a></li></ol> <div class="language- extra-class"><pre><code>- [语法](#syntax)
+- [排序](#ordering-of-property-declarations)
+- [变量](#variables)
+- [Mixins](#mixins)
+- [扩展指令](#extend-directive)
+- [嵌套选择器](#nested-selectors)
+</code></pre></div><p><a name="terminology"></a></p> <h2 id="术语"><a href="#术语" class="header-anchor">#</a> 术语</h2> <p><a name="rule-declaration"></a></p> <h3 id="规则声明"><a href="#规则声明" class="header-anchor">#</a> 规则声明</h3> <p>我们把一个（或一组）选择器和一组属性称之为 “规则声明”。举个例子：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.listing</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a name="selectors"></a></p> <h3 id="选择器"><a href="#选择器" class="header-anchor">#</a> 选择器</h3> <p>在规则声明中，“选择器” 负责选取 DOM 树中的元素，这些元素将被定义的属性所修饰。选择器可以匹配 HTML 元素，也可以匹配一个元素的类名、ID, 或者元素拥有的属性。以下是选择器的例子：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.my-element-class</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">[aria-hidden]</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a name="properties"></a></p> <h3 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h3> <p>最后，属性决定了规则声明里被选择的元素将得到何种样式。属性以键值对形式存在，一个规则声明可以包含一或多个属性定义。以下是属性定义的例子：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* some selector */</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #f1f1f1<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a name="css"></a></p> <h2 id="css"><a href="#css" class="header-anchor">#</a> CSS</h2> <p><a name="file-import"></a></p> <h3 id="文件引用"><a href="#文件引用" class="header-anchor">#</a> 文件引用</h3> <ul><li>[建议] 使用 <code>link</code> 的方式调用外部样式</li> <li>[强制] 不允许在 <code>&lt;style&gt;</code> 块中使用 <code>@import</code>。</li> <li>[强制] 不允许使用 <code>style</code> 属性写行内样式。</li></ul> <p><a name="formatting"></a></p> <h3 id="格式"><a href="#格式" class="header-anchor">#</a> 格式</h3> <ul><li>[强制] 使用 2 个空格作为缩进。</li> <li>[强制] 全小写，使用<code>-</code>作为相关类的自然间断（不要使用<code>_</code>和 camelCase）。</li> <li>[建议] 不要使用 ID 选择器。</li> <li>[强制] 在一个规则声明中应用了多个选择器时，每个选择器独占一行。</li> <li>[强制] 在规则声明的左大括号 <code>{</code> 前加上一个空格。</li> <li>[强制] 在属性的冒号 <code>:</code> 后面加上一个空格，前面不允许空格。</li> <li>[强制] 逗号分隔的取值，都应该在逗号之后增加一个空格</li> <li>[强制] 规则声明的右大括号 <code>}</code> 独占一行。</li> <li>[建议] 规则声明之间用空行分隔开。</li> <li>[建议] 每个选择器最后一条属性 <code>;</code> 不能省略</li> <li>[建议] 所有的十六进制值都应该使用小写字母，例如 <code>#fff</code></li> <li>[强制] 为选择器中得属性取值添加<strong>双引号</strong>，例如 <code>input[type=&quot;text&quot;]</code></li> <li>[建议] 不要为 0 指明单位，比如使用 <code>margin: 0;</code> 而不是 <code>margin: 0px;</code></li> <li>[建议] 在定义无边框样式时，使用 <code>0</code> 代替 <code>none</code>。</li></ul> <p><strong>Bad</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.avatar</span><span class="token punctuation">{</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span>50%<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span>2px solid white<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">.no, .nope, .not_good</span> <span class="token punctuation">{</span>
+    // ...
+<span class="token punctuation">}</span>
+<span class="token selector">#lol-no</span> <span class="token punctuation">{</span>
+  // ...
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Good</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.avatar</span> <span class="token punctuation">{</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid white<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.one,
+.selector,
+.per-line</span> <span class="token punctuation">{</span>
+  // ...
+<span class="token punctuation">}</span>
+</code></pre></div><p><a name="order"></a></p> <h3 id="属性顺序"><a href="#属性顺序" class="header-anchor">#</a> 属性顺序</h3> <ol><li>Positioning</li> <li>Box model 盒模型</li> <li>Typographic 排版</li> <li>Visual 外观</li></ol> <p>Position 处在第一位，因为他可以使一个元素脱离正常文本流，独立显示，并且覆盖盒模型相关的样式。盒模型紧跟其后，因为他决定了一个组件的大小和位置。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.declaration-order</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* Positioning */</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> 100<span class="token punctuation">;</span>
+
+  <span class="token comment">/* Box-model */</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+
+  <span class="token comment">/* Typography */</span>
+  <span class="token property">font</span><span class="token punctuation">:</span> normal 13px <span class="token string">&quot;Helvetica Neue&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+
+  <span class="token comment">/* Visual */</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #f5f5f5<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #e5e5e5<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+
+  <span class="token comment">/* Misc */</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a name="careful"></a></p> <h3 id="注意事项"><a href="#注意事项" class="header-anchor">#</a> 注意事项</h3> <ul><li>[强制] 避免过度使用简写。.btn 可以很好地描述 <code>button</code>，但是 <code>.s</code> 不能代表任何元素。</li> <li>[建议] <code>class</code> 的命名应该尽量短，也要尽量明确。</li> <li>[强制] 使用有意义的名称；使用结构化或者作用目标相关，而不是抽象的名称。</li> <li>[建议] 命名时使用最近的父节点或者父 class 作为前缀。</li> <li>[强制] 使用 classes 而不是通用元素作为选择器，不允许 <code>div.doc</code>。</li> <li>[建议] 避免在经常出现的组件中使用一些属性选择器 (例如，[class^=&quot;...&quot;])。浏览器性能会受到这些情况的影响。</li> <li>[建议] 减少选择器的长度，每个组合选择器选择器的条目应该尽量控制在 3 个以内。</li></ul> <p><a name="comments"></a></p> <h3 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h3> <ul><li>建议使用行注释 (在 Sass 中是 <code>//</code>) 代替块注释。</li> <li>建议注释独占一行。避免行末注释。</li> <li>保持注释内容与星号之间有一个空格的距离 <code>/* 普通注释 */</code></li> <li>给没有自注释的代码写上详细说明，比如：
+<ul><li>为什么用到了 z-index</li> <li>兼容性处理或者针对特定浏览器的 hack</li></ul></li></ul> <p><a name="oocss-and-bem"></a></p> <h3 id="oocss-和-bem"><a href="#oocss-和-bem" class="header-anchor">#</a> OOCSS 和 BEM</h3> <p>出于以下原因，建议使用 OOCSS 和 BEM 的某种组合：</p> <ul><li>可以帮助我们理清 CSS 和 HTML 之间清晰且严谨的关系。</li> <li>可以帮助我们创建出可重用、易装配的组件。</li> <li>可以减少嵌套，降低特定性。</li> <li>可以帮助我们创建出可扩展的样式表。</li></ul> <p><strong>OOCSS</strong>，也就是 “Object Oriented CSS（面向对象的CSS）”，是一种写 CSS 的方法，其思想就是鼓励你把样式表看作“对象”的集合：创建可重用性、可重复性的代码段让你可以在整个网站中多次使用。</p> <p>参考资料：</p> <ul><li>Nicole Sullivan 的 <a href="https://github.com/stubbornella/oocss/wiki" target="_blank" rel="noopener noreferrer">OOCSS wiki<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>Smashing Magazine 的 <a href="http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/" target="_blank" rel="noopener noreferrer">Introduction to OOCSS<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p><strong>BEM</strong>，也就是 “Block-Element-Modifier”，是一种用于 HTML 和 CSS 类名的_命名约定_。BEM 最初是由 Yandex 提出的，要知道他们拥有巨大的代码库和可伸缩性，BEM 就是为此而生的，并且可以作为一套遵循 OOCSS 的参考指导规范。</p> <ul><li>CSS Trick 的 <a href="https://css-tricks.com/bem-101/" target="_blank" rel="noopener noreferrer">BEM 101<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>Harry Roberts 的 <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank" rel="noopener noreferrer">introduction to BEM<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p><strong>示例</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>listing-card listing-card--featured<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>listing-card__title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Adorable 2BR in the sunny Mission<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>listing-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Vestibulum id ligula porta felis euismod semper.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.listing-card</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token selector">.listing-card--featured</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token selector">.listing-card__title</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token selector">.listing-card__content</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+</code></pre></div><ul><li><code>.listing-card</code> 是一个块（block），表示高层次的组件。</li> <li><code>.listing-card__title</code> 是一个元素（element），它属于 <code>.listing-card</code> 的一部分，因此块是由元素组成的。</li> <li><code>.listing-card--featured</code> 是一个修饰符（modifier），表示这个块与 <code>.listing-card</code> 有着不同的状态或者变化。</li></ul> <p><a name="id-selectors"></a></p> <h3 id="id-选择器"><a href="#id-选择器" class="header-anchor">#</a> ID 选择器</h3> <p>在 CSS 中，虽然可以通过 ID 选择元素，但大家通常都会把这种方式列为反面教材。ID 选择器给你的规则声明带来了不必要的高<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank" rel="noopener noreferrer">优先级<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，而且 ID 选择器是不可重用的。</p> <p>想要了解关于这个主题的更多内容，参见 <a href="http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/" target="_blank" rel="noopener noreferrer">CSS Wizardry 的文章<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，文章中有关于如何处理优先级的内容。</p> <p><a name="javascript-hooks"></a></p> <h3 id="javascript-钩子"><a href="#javascript-钩子" class="header-anchor">#</a> JavaScript 钩子</h3> <p>避免在 CSS 和 JavaScript 中绑定相同的类。否则开发者在重构时通常会出现以下情况：轻则浪费时间在对照查找每个要改变的类，重则因为害怕破坏功能而不敢作出更改。</p> <p>我们推荐在创建用于特定 JavaScript 的类名时，添加 <code>.js-</code> 前缀：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>btn btn-primary js-request-to-book<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Request to Book<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><a name="sass"></a></p> <h2 id="sass"><a href="#sass" class="header-anchor">#</a> Sass</h2> <p><a name="syntax"></a></p> <h3 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h3> <ul><li>使用 <code>.scss</code> 的语法，不使用 <code>.sass</code> 原本的语法。</li> <li>CSS 和 <code>@include</code> 声明按照以下逻辑排序（参见下文）</li></ul> <p><a name="ordering-of-property-declarations"></a></p> <h3 id="属性声明的排序"><a href="#属性声明的排序" class="header-anchor">#</a> 属性声明的排序</h3> <ol><li><p>属性声明</p> <p>首先列出除去 <code>@include</code> 和嵌套选择器之外的所有属性声明。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.btn-green </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p><code>@include</code> 声明</p> <p>紧随后面的是 <code>@include</code>，这样可以使得整个选择器的可读性更高。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.btn-green </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token keyword">@include</span> <span class="token function">transition</span><span class="token punctuation">(</span>background 0.5s ease<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>嵌套选择器</p> <p>_如果有必要_用到嵌套选择器，把它们放到最后，在规则声明和嵌套选择器之间要加上空白，相邻嵌套选择器之间也要加上空白。嵌套选择器中的内容也要遵循上述指引。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.btn </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token keyword">@include</span> <span class="token function">transition</span><span class="token punctuation">(</span>background 0.5s ease<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token selector">.icon </span><span class="token punctuation">{</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ol> <p><a name="variables"></a></p> <h3 id="变量"><a href="#变量" class="header-anchor">#</a> 变量</h3> <p>变量名应使用破折号（例如 <code>$my-variable</code>）代替 camelCased 和 snake_cased 风格。对于仅用在当前文件的变量，可以在变量名之前添加下划线前缀（例如 <code>$_my-variable</code>）。</p> <p><a name="mixins"></a></p> <h3 id="mixins"><a href="#mixins" class="header-anchor">#</a> Mixins</h3> <p>为了让代码遵循 DRY 原则（Don't Repeat Yourself）、增强清晰性或抽象化复杂性，应该使用 mixin，这与那些命名良好的函数的作用是异曲同工的。虽然 mixin 可以不接收参数，但要注意，假如你不压缩负载（比如通过 gzip），这样会导致最终的样式包含不必要的代码重复。</p> <p><a name="extend-directive"></a></p> <h3 id="扩展指令"><a href="#扩展指令" class="header-anchor">#</a> 扩展指令</h3> <p>应避免使用 <code>@extend</code> 指令，因为它并不直观，而且具有潜在风险，特别是用在嵌套选择器的时候。即便是在顶层占位符选择器使用扩展，如果选择器的顺序最终会改变，也可能会导致问题。（比如，如果它们存在于其他文件，而加载顺序发生了变化）。其实，使用 @extend 所获得的大部分优化效果，gzip 压缩已经帮助你做到了，因此你只需要通过 mixin 让样式表更符合 DRY 原则就足够了。</p> <p><a name="nested-selectors"></a></p> <h3 id="嵌套选择器"><a href="#嵌套选择器" class="header-anchor">#</a> 嵌套选择器</h3> <p><strong>请不要让嵌套选择器的深度超过 3 层！</strong></p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.page-container </span><span class="token punctuation">{</span>
+  <span class="token selector">.content </span><span class="token punctuation">{</span>
+    <span class="token selector">.profile </span><span class="token punctuation">{</span>
+      <span class="token comment">// STOP!</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>当遇到以上情况的时候，你也许是这样写 CSS 的：</p> <ul><li>与 HTML 强耦合的（也是脆弱的）<em>—或者—</em></li> <li>过于具体（强大）<em>—或者—</em></li> <li>没有重用</li></ul> <p>再说一遍: <strong>永远不要嵌套 ID 选择器！</strong></p> <p>如果你始终坚持要使用 ID 选择器（劝你三思），那也不应该嵌套它们。如果你正打算这么做，你需要先重新检查你的标签，或者指明原因。如果你想要写出风格良好的 HTML 和 CSS，你是<strong>不</strong>应该这样做的。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/web-doc/web-standar/变量命名.html">
+        变量命名
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/web-doc/assets/js/app.d25b3d65.js" defer></script><script src="/web-doc/assets/js/2.6a76ebee.js" defer></script><script src="/web-doc/assets/js/15.4dcf31a3.js" defer></script>
+  </body>
+</html>
